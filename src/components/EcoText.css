@@ -1,0 +1,85 @@
+/* EcoText.css */
+
+.eco-text-container {
+  position: relative;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.light {
+  position: absolute;
+  width: 5px; /* Adjust size as needed */
+  height: 5px; /* Adjust size as needed */
+  border-radius: 50%;
+  background-color: #f8ea5e; /* Adjust color as needed */
+  animation: lightTwinkle 3s linear infinite;
+}
+
+.light:nth-child(2) {
+  top: 20%;
+  left: 60%;
+}
+
+.light:nth-child(3) {
+  top: 50%;
+  left: 30%;
+}
+
+.light:nth-child(4) {
+  top: 80%;
+  left: 80%;
+}
+
+@keyframes lightTwinkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.intro-text {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.highlights {
+  display: flex;
+  justify-content: space-around;
+}
+
+.highlight {
+  flex: 1;
+  max-width: 300px;
+}
+
+.highlight i {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #38b000; /* Green color */
+}
+
+.highlight h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.highlight p {
+  font-size: 16px;
+  line-height: 1.6;
+}

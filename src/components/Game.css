@@ -1,0 +1,64 @@
+.recycle-game-container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .start-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #4cae4c;
+  }
+  
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .recyclable {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .non-recyclable {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .next-level-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .next-level-button:hover,
+  .item-button:hover {
+    background-color: #286090;
+  }
+  

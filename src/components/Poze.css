@@ -1,0 +1,45 @@
+/* PhotoUploadPage.css */
+
+.photo-upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .form-container input[type="file"] {
+    display: none;
+  }
+  
+  .upload-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .upload-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .photos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid columns as needed */
+    grid-gap: 20px;
+  }
+  
+  .photo-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .photo-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
