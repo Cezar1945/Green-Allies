@@ -1,0 +1,37 @@
+.learn-about-container {
+  position: relative;
+}
+
+.background-image {
+  background-image: url('https://www.greentechnologyinfo.com/wp-content/uploads/2020/10/green1-1024x576.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Schimbăm direcția de afișare a flexbox-ului la vertical */
+  align-items: center; /* Aliniază orizontal textul și imaginile */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+.problems-and-solutions {
+  display: flex;
+  justify-content: space-between; /* Așază problemele și soluțiile în coloane separate */
+  width: 80%; /* Mărește lățimea containerului pentru a acoperi mai mult spațiu */
+  margin-top: 20px; /* Adaugă spațiu între text și probleme/soluții */
+}
+
+.problem, .solution {
+  flex-basis: 45%; /* Specifică lățimea pentru fiecare problemă și soluție */
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* Adaugă un fundal alb semitransparent pentru a evidenția problemele și soluțiile */
+}
+
+.problem h3, .solution h3 {
+  color: #FF6347; /* Redefinește culoarea pentru titlurile problemelor și soluțiilor */
+}

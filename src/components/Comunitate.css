@@ -1,0 +1,54 @@
+src/
+  components/
+    RecyclingCommunity.js
+    RecyclingCommunity.css
+
+/* Comunitate.css */
+
+.recycling-community {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recycling-community h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.community-box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px; /* Added margin to separate from the heading */
+}
+
+.community-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.join-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.community-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Added margin to separate from the content */
+}
+
+.community-images img {
+  width: 150px; /* Adjust the image width as needed */
+  height: auto;
+  border-radius: 5px;
+}
+
+  

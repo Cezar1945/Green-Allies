@@ -1,0 +1,57 @@
+.footer {
+    background-color: rgb(48, 47, 47);
+    height: 300px;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .content {
+    padding: 30px 20px 0px 0px;
+    width: 40%;
+    float: left;
+  }
+  
+  .text1 {
+    width: 48%;
+    text-align: right;
+    color: white;
+  }
+  
+  .text2 {
+    width: 48%;
+    text-align: left;
+    color: white;
+  }
+  
+  
+  .social-media {
+    width: 48%;
+    float: right;
+    text-align: left;
+    color: white;
+    padding-top: 3px;
+  }
+  
+  
+  .social-media a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-weight: bold; 
+  }
+  
+  .social-media-text {
+    color: white;
+    margin-right: 5px;
+    
+  }
+  
+  .sub{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-weight: bold; 
+    margin: 0;
+  }
