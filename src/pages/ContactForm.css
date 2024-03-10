@@ -1,69 +1,72 @@
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 700px;
+  background-color: #e0e0e0;
+  box-shadow: 37px 37px 74px #5a5a5a, -37px -37px 74px #ffffff;
+  border-radius: 50px;
 
-  }
-  .gradient-background {
-    height: 100vh; /* Înălțimea ocupă întreaga înălțime a ecranului */
-    background: linear-gradient(45deg, #006400, #00FF00); /* Gradient de la verde închis la verde deschis la un unghi de 45 de grade */
-    background-size: 200% 200%; /* Dimensionează gradientul la 200% înălțime și lățime pentru a permite mișcarea */
-    animation: gradientAnimation 15s infinite linear; /* Animare de 15 secunde, infinit, linear */
-  }
-  
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 0%; /* Poziție la începutul animației */
-    }
-    100% {
-      background-position: 100% 100%; /* Poziție la sfârșitul animației */
-    }
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  textarea {
-    height: 150px; /* Reglează înălțimea câmpului de text */
-  }
-  
-  .btn {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
- 
-  
-  /* Restul stilurilor rămân neschimbate */
-  
-  
+}
+#txt{
+  color: white;
+}
+.gradient-background {
+  height: 100vh; /* Înălțimea ocupă întreaga înălțime a ecranului */
+  background: linear-gradient(45deg, #006400, #00FF00); /* Gradient de la verde închis la verde deschis la un unghi de 45 de grade */
+  background-size: 200% 200%; /* Dimensionează gradientul la 200% înălțime și lățime pentru a permite mișcarea */
+  animation: gradientAnimation 15s infinite linear; /* Animare de 15 secunde, infinit, linear */
+}
 
-  
-  /* Restul stilurilor rămân neschimbate */
-  
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%; /* Poziție la începutul animației */
+  }
+  100% {
+    background-position: 100% 100%; /* Poziție la sfârșitul animației */
+  }
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+textarea {
+  height: 150px; 
+  margin-left: -10px;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+input{
+  margin-left: -10px;
+}

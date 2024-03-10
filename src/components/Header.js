@@ -13,7 +13,7 @@ function Header() {
         <Link className="header-nav-link" to="/">
           Earth Allies
         </Link>
-        <Link className="header-nav-link" to="http://192.168.1.204">
+        <Link className="header-nav-link" to="http://192.168.207.249">
           Monitoring
         </Link>
         <Link className="header-nav-link" to="http://192.168.207.111:5000">

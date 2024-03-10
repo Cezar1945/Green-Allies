@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 
 const styles = `
@@ -50,31 +51,35 @@ textarea {
 function ContactForm() {
   return (
     <div>
-      <Header /> 
+      <Header />
       <form action="https://formsubmit.co/cezarmanea22@gmail.com" method="POST">
-      <div className="container">
-        <h2>Formular de Contact</h2>
-        <div className="form-group">
-          <label htmlFor="nume">Nume:</label>
-          <input type="text" id="nume" name="nume" required />
+        <div className="container">
+          <h2 id='txt'>Formular de Contact</h2>
+          <div className="form-group">
+            <label htmlFor="nume" id='txt'>Nume:</label>
+            <input type="text" id="nume" name="nume" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="email" id='txt'>Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="subiect" id='txt'>Subiect:</label>
+            <input type="text" id="subiect" name="subiect" required />
+          </div>
+          <div className="form-group">
+            <label htmlFor="mesaj" id='txt'>Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" required></textarea>
+          </div>
+          <div className="form-group" id='txt'>
+            
+            <button type="submit" className="btn">Trimite</button>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="subiect">Subiect:</label>
-          <input type="text" id="subiect" name="subiect" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="mesaj">Mesaj:</label>
-          <textarea id="mesaj" name="mesaj" required></textarea>
-        </div>
-        <div className="form-group">
-          <button type="submit" className="btn">Trimite</button>
-        </div>
-      </div>
-    </form>
+        <br />
+
+        <Footer />
+      </form>
     </div>
   );
 }
