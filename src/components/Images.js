@@ -18,16 +18,15 @@ const divStyle = {
 }
 const slideImages = [
   {
-    url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-    caption: 'Slide 1'
+    url: 'https://images.squarespace-cdn.com/content/v1/52f53adce4b0030add82ab9f/ba563c63-c22c-4212-b5e0-94c4af51a437/Eco-Header.jpg?format=1500w',
   },
   {
-    url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
-    caption: 'Slide 2'
+    url: 'https://www.rootsveyr.com/wp-content/uploads/2021/12/eco-farm.jpg',
+    
   },
   {
-    url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
-    caption: 'Slide 3'
+    url: 'https://islandwatersportshhi.com/images/eco-tours-header.jpg',
+
   },
 ];
 
@@ -38,7 +37,8 @@ const Images = () => {
          {slideImages.map((slideImage, index)=> (
             <div key={index}>
               <div style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-                <span style={spanStyle}>{slideImage.caption}</span>
+      
+
               </div>
             </div>
           ))} 

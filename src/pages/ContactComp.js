@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import './ContactForm.css';  // Importă fișierul cu stiluri
+import './ContactForm.css';  // Import the styles file
 
 function ContactForm() {
   const [image, setImage] = useState(null);
@@ -15,63 +15,63 @@ function ContactForm() {
       <Header />
       
       <div className="challenge-description">
-  <p>
-    <strong>Bine ai venit al ECOINNOVATION</strong>
-    <p></p>
-    <strong>Înscrie-te acum pentru a salva planeta!</strong> Participă la chalengeurile noastre zilnice și fii eroul mediului înconjurător. Prin acțiuni simple, poți face o diferență semnificativă în lupta împotriva schimbărilor climatice.
-  </p>
-  <p>
-    <strong>De ce să te înscrii?</strong>
-    <ul>
-      <li>❖ Contribuie la reducerea deșeurilor și a poluării;</li>
-      <li>❖ Plantează un copac pentru fiecare chalenge îndeplinit;</li>
-      <li>❖ Economisește resurse și energie în fiecare zi;</li>
-      <li>❖ Alătură-te comunității care luptă pentru un mediu mai curat și sănătos.</li>
-    </ul>
-  </p>
-  <p>
-    <strong>Cum funcționează:</strong> Completează formularul de mai jos cu numele tău, adresa de email și un mesaj. Mai mult, demonstrează implicarea ta prin încărcarea unei poze care să reflecte unul dintre chalengeurile zilnice îndeplinite.
-  </p>
-  <p>
-    <strong>Exemple de chalengeuri zilnice:</strong>
-    <ul>
-      <li>❖ Reciclează deșeurile conform regulilor locale;</li>
-      <li>❖ Plantează flori în jurul casei tale și împărtășește rezultatul;</li>
-      <li>❖ Folosește bicicleta sau mersul pe jos în loc de mașină pentru o zi;</li>
-      <li>❖ Redu consumul de apă în timpul activităților zilnice.</li>
-    </ul>
-  </p>
-  <p>
-    <strong>Recompensează-ți eforturile!</strong>
-    <p></p> Prin îndeplinirea chalengeurilor, vei acumula puncte. Aceste puncte îți vor aduce șansa de a câștiga vouchere valoroase sau alte premii surpriză. Cu cât te implici mai mult, cu atât șansele tale de a câștiga cresc!
-  </p>
-</div>
+        <p>
+          <strong>Welcome to ECOINNOVATION</strong>
+          <p></p>
+          <strong>Sign up now to save the planet!</strong> Participate in our daily challenges and be an environmental hero. Through simple actions, you can make a significant difference in the fight against climate change.
+        </p>
+        <p>
+          <strong>Why should you join?</strong>
+          <ul>
+            <li>❖ Contribute to waste reduction and pollution;</li>
+            <li>❖ Plant a tree for each completed challenge;</li>
+            <li>❖ Save resources and energy every day;</li>
+            <li>❖ Join the community that fights for a cleaner and healthier environment.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>How it works:</strong> Fill out the form below with your name, email address, and a message. Furthermore, demonstrate your commitment by uploading a photo that reflects one of the completed daily challenges.
+        </p>
+        <p>
+          <strong>Examples of daily challenges:</strong>
+          <ul>
+            <li>❖ Recycle waste according to local rules;</li>
+            <li>❖ Plant flowers around your home and share the results;</li>
+            <li>❖ Use a bike or walk instead of a car for a day;</li>
+            <li>❖ Reduce water consumption during daily activities.</li>
+          </ul>
+        </p>
+        <p>
+          <strong>Reward your efforts!</strong>
+          <p></p> By completing challenges, you will accumulate points. These points will give you the chance to win valuable vouchers or other surprise prizes. The more you get involved, the higher your chances of winning!
+        </p>
+      </div>
 
       <form action="https://formsubmit.co/cezarmanea22@gmail.com" method="POST">
         <div className="container">
-          <h2>Formular de Contact</h2>
+          <h2>Contact Form</h2>
           <div className="form-group">
-            <label htmlFor="nume">Nume:</label>
-            <input type="text" id="nume" name="nume" required />
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email:</label>
             <input type="email" id="email" name="email" required />
           </div>
           <div className="form-group">
-            <label htmlFor="subiect">Subiect:</label>
-            <input type="text" id="subiect" name="subiect" required />
+            <label htmlFor="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
           </div>
           <div className="form-group">
-            <label htmlFor="mesaj">Mesaj:</label>
-            <textarea id="mesaj" name="mesaj" required></textarea>
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
           </div>
           <div className="form-group">
-            <label htmlFor="poza">Încarcă o poză:</label>
-            <input type="file" id="poza" name="poza" accept="image/*" onChange={handleImageChange} />
+            <label htmlFor="photo">Upload a photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" onChange={handleImageChange} />
           </div>
           <div className="form-group">
-            <button type="submit" className="btn">Trimite</button>
+            <button type="submit" className="btn">Submit</button>
           </div>
         </div>
       </form>
