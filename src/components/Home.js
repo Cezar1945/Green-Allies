@@ -1,43 +1,38 @@
-import React from "react";
-import { Button } from "react-bootstrap";
-import { useNavigate } from "react-router";
-import { useUserAuth } from "../context/UserAuthContext";
-
-const Home = () => {
-  const { logOut, user } = useUserAuth();
-  const navigate = useNavigate();
-
-  const handleLogout = async () => {
-    try {
-      await logOut();
-      navigate("/");
-    } catch (error) {
-      console.log(error.message);
-    }
-    console.log("User in Home:", user);
-  };
-
+import React from 'react';
+import '../App'
+import { Link } from 'react-router-dom';
+import './Header.css';
+import './Footer';
+import Footer from './Footer';
+import Header from './Header';
+import Form from '../pages/ContactComp';
+function Home() {
   return (
-    <>
-      <div className="p-4 box mt-3 text-center">
-        {user ? (
-          <>
-            <p>Welcome</p>
-            <p>{user.email}</p>
-          </>
-        ) : (
-          <p>Please log in to view your profile.</p>
-        )}
-      </div>
-      <div className="d-grid gap-2">
-        <Button variant="primary" onClick={handleLogout}>
+<div>
+<Header />
+
+
+    
+<div className="header-logo clearfix">
+
+      <span className="header-icon"><i className="fas fa-hiking"></i></span>
+        <span className="text-align">   ECOINNOVATION </span>
+      <nav className="header-nav">
+        
+  <Link className="header-nav-link" to="/">
           Log out
-        </Button>
-      </div>
-      
-    </>
+        </Link>
+
+ </nav>
+ </div>
+ <Form />
+ <Footer />
+    </div>
+    
   );
-};
+}
+
+
 
 
 export default Home;

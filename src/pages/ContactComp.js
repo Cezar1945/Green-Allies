@@ -12,7 +12,6 @@ function ContactForm() {
 
   return (
     <div>
-      <Header />
       
       <div className="challenge-description">
         <p>
